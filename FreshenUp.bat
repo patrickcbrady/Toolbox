@@ -5,6 +5,7 @@ sc stop AdobeARMservice
 sc stop BTAGService
 sc stop bthserv
 sc stop wuauserv
+sc stop SysMain
 taskkill -t -f -im Adobe*
 taskkill -t -f -im Creative*
 taskkill -t -f -im Acro*
