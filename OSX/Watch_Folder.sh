@@ -5,7 +5,7 @@ echo "Enter the directory to watch";
 read dir;
 
 clear;
-echo "Enter a nicknam for the folder";
+echo "Enter a nickname for the folder";
 read name;
 
 cd "$dir";
@@ -31,8 +31,8 @@ do
 	filtDiff=$( echo "$filtDiff" | sed 's/>/added/g' | sed 's/</removed/g' );
 
 	# add suffixes 
-	filtDiff=$( echo "$filtDiff" | sed -E 's/(added.*)/\1 to '$name'/g' );
-	filtDiff=$( echo "$filtDiff" | sed -E 's/(removed.*)/\1 from '$name'/g' );
+	filtDiff=$( echo "$filtDiff" | sed -E 's/(added.*)/\1 to '"$name"'/g' );
+	filtDiff=$( echo "$filtDiff" | sed -E 's/(removed.*)/\1 from '"$name"'/g' );
 
 	# display and say the change
 	echo "$filtDiff";
