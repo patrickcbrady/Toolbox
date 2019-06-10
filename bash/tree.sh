@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 
 # if no argument is passed by the user
 # the current working directory is used
@@ -23,10 +23,7 @@ function LIST ()
 	for ITEM in *;
 	do
 		if [[
-			# if it's not a symbolic link
-			! -L "$ITEM" &&
-			
-			# if it's a directory
+			# if its a directory
 			-d "$ITEM"
 		]]
 		then
@@ -37,7 +34,13 @@ function LIST ()
 		fi
 
 		if [[
-			# if we're allowed to open it
+			# if its not a symbolic link
+			! -L "$ITEM" &&
+			
+			# if its a directory
+			-d "$ITEM" &&
+			
+			# if were allowed to open it
 			-x "$ITEM"
 		]]
 		then
@@ -45,9 +48,9 @@ function LIST ()
 			NEWDEPTH=$DEPTH$'\t';
 
 			# recursive call to LIST
-			# needs it's own subshell
+			# needs its own subshell
 			# because the `local` builtin
-			# doesn't work recursively
+			# doesnt work recursively
 			( LIST "$ITEM" "$NEWDEPTH" );
 		fi
 	done;
