@@ -1,4 +1,16 @@
 #target aftereffects
+
+// - - - - - - - - - - - - - -
+// File: "SortProject_v02.jsx"
+// Version: 2.0
+// Author: Immanuel Morales
+// Date: 6/116/2019
+// - - - - - - - - - - - - - -
+
+
+// Automatically sorts and organizes whichever
+// After Effects Project file is open
+
 (function()
 {
 	function getAllItems()
