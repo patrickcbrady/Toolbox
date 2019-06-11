@@ -1,7 +1,16 @@
 #!/bin/bash
 
-# if no argument is passed by the user
-# the current working directory is used
+# - - - - - - - - - - - - -
+# File: tree.sh
+# Version: 1.0
+# Author: Immanuel Morales
+# Date: 6/11/2019
+# - - - - - - - - - - - - -
+
+# Outputs a recursive listing of all files in a directory.
+# The only argument taken is the directory path.
+# If no argument is given, the Current Working Directory will be used.
+
 if [[ $1 ]]
 then
 	TARGET="$1";
