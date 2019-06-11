@@ -15,4 +15,9 @@ taskkill -t -f -im ctfmon*
 taskkill -t -f -im Microsoft.Photos*
 taskkill -t -f -im OneDrive*
 taskkill -t -f -im WinStore*
+<<<<<<< HEAD
+=======
+taskkill -t -f -im rundll*
+taskkill -t -f -im ProcessLasso*
+>>>>>>> master
 pause
