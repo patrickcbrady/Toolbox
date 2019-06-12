@@ -1,10 +1,10 @@
 #target aftereffects
 
 // - - - - - - - - - - - - - -
-// File: "SortProject_v02.jsx"
+// File: "SortProject.jsx"
 // Version: 2.0
 // Author: Immanuel Morales
-// Date: 6/116/2019
+// Date: 6/11/2019
 // - - - - - - - - - - - - - -
 
 
