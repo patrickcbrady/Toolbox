@@ -1,8 +1,8 @@
-#target after effects
+#target aftereffects
 
 // - - - - - - - - - - - - - - 
 // File: BGRender.jsx
-// Version: 2.0
+// Version: 2.0.1
 // Author: Immanuel Morales
 // Date: 6/11/2019
 // - - - - - - - - - - - - - -
