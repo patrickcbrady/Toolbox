@@ -112,7 +112,7 @@
 				if ( source instanceof SolidSource )
 				{
 					// move it in "Solids"
-					item.ParentFolder = fSolids;
+					item.parentFolder = fSolids;
 				} else {
 					// put it in "Assets"
 					item.parentfolder = fAssets;
