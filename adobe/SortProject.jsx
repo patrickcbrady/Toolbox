@@ -115,7 +115,7 @@
 					item.parentFolder = fSolids;
 				} else {
 					// put it in "Assets"
-					item.parentfolder = fAssets;
+					item.parentFolder = fAssets;
 				}
 			// if it's a CompItem
 			} else if ( tName === "Composition" ) {
